@@ -1,3 +1,4 @@
-!pip install yfinance
-!pip install bs4
-!pip install nbformat
+import yfinance as yf
+tesla = yf.Ticker("TSLA")
+tesla_data = tesla.history(period="max")
+tesla_data.head()
